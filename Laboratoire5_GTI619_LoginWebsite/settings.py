@@ -37,10 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_prbac',
     'accounts',
     'prepaffaire',
     'prepresidentiels',
     'administrateur',
+    #'defender',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'defender.middleware.FailedLoginMiddleware',
 ]
 
 ROOT_URLCONF = 'Laboratoire5_GTI619_LoginWebsite.urls'
@@ -94,6 +97,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'OPTIONS': {
+            'min_length': 8,
+        }
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -102,6 +108,13 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Django Defender settings
+# https://github.com/kencochrane/django-defender
+#DEFENDER_LOGIN_FAILURE_LIMIT = 2
+#DEFENDER_DISABLE_IP_LOCKOUT = True
+#DEFENDER_STORE_ACCESS_ATTEMPS = True
+#DEFENDER_COOLOFF_TIME = 300
 
 
 # Internationalization

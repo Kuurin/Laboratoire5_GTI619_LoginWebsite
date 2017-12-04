@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+<h1>Welcome</h1>
+<p> You can log out here!</p>
+<h2>Logout</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Log out</button>
+</form>
+    </div>
+
+{% endblock %}

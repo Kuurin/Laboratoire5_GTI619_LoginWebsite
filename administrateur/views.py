@@ -3,4 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def home(request):
-    return render(request,'administrateur/home.html')
+    if request.user.groups.filter(name__icontains="Administrateur").exists():
+        return render(request,'administrateur/home.html')
+    else:
+        return render(request,'account/login.html')
