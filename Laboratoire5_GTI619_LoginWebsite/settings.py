@@ -77,6 +77,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Laboratoire5_GTI619_LoginWebsite.wsgi.application'
 
+#Session middleware
+SESSION_COOKIE_AGE = 60*20; #60 secondes * N minutes
+SESSION_SAVE_EVERY_REQUEST = True;
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
