@@ -117,6 +117,8 @@ AUTH_PASSWORD_VALIDATORS = [
 #DEFENDER_STORE_ACCESS_ATTEMPS = True
 #DEFENDER_COOLOFF_TIME = 300
 
+# Django-axes
+# https://github.com/jazzband/django-axes
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
