@@ -7,8 +7,10 @@ def home (request):
     name = 'Amelie'
     if request.user.is_authenticated:
         return render(request,'accounts/home.html')
+    if request.user.is_authenticated:
+        return render(request,'accounts/logout.html')
 
 
-    args = {'myName':name,'numbers': numbers}
-    return render(request, 'accounts/home.html', args)
+    #args = {'myName':name,'numbers': numbers}
+    #return render(request, 'accounts/home.html', args)
 
