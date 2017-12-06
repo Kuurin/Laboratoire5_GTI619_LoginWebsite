@@ -5,5 +5,17 @@
 {% endblock%}
 
 {% block body %}
-<h1>Home preposer d'affaire</h1>
+<h1>Liste des clients d'affaire</h1>
+      {% for prepaffaire in listeClientx %}
+      <li>
+        Nom : {{prepaffaire.nom}}<br> 
+		Prenom : {{prepaffaire.prenom}}<br> 
+		Email : {{prepaffaire.email}}<br> 
+		Telephone : {{prepaffaire.phone}}<br>
+		----------------------------------<br>
+      </li>
+      {% endfor %}
+
+
+
 {% endblock%}
