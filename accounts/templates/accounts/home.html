@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base(login).html' %}
 
 <h1>Home</h1>
 {% block head %}
@@ -6,6 +6,5 @@
 {% endblock%}
 
 {% block body %}
-<h1>Home</h1>
-<a href="{% url 'logout' %}">logout</a>
+<h2>Home</h2>
 {% endblock%}
