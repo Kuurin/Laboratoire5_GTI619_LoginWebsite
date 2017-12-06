@@ -4,11 +4,12 @@
 <div class="container">
 <h1>Welcome</h1>
 <p> You can log out here!</p>
-<h2>Logout</h2>
 
 <form method="post">
     {% csrf_token %}
-    <button type="submit" href="/account/">Log out</button>
+      <h2>Logged out</h2>
+      <p>You have been successfully logged out.</p>
+      <p><a href="{% url 'login' %}">Log in</a> again.</p>
 </form>
     </div>
 
