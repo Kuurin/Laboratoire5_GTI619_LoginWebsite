@@ -75,6 +75,11 @@ TEMPLATES = [
     },
 ]
 
+#Session middleware
+SESSION_COOKIE_AGE = 60*20 #60 secondes * N minutes
+SESSION_SAVE_EVERY_REQUEST = True
+
+
 WSGI_APPLICATION = 'Laboratoire5_GTI619_LoginWebsite.wsgi.application'
 
 
@@ -119,6 +124,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Django-axes
 # https://github.com/jazzband/django-axes
+AXES_ONLY_USER_FAILURES = True
+AXES_COOLOFF_TIME = 1
+AXES_FAILURE_LIMIT = 3
+AXES_LOCK_OUT_AT_FAILURE = True
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
