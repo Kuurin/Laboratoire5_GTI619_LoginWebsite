@@ -1,9 +1,21 @@
 {% extends 'base(login).html' %}
 
 {% block head %}
-<title>Home preposer residentiels</title>
+<title>Home preposer residentiel</title>
 {% endblock%}
 
 {% block body %}
-<h1>Home preposer residentiels</h1>
+<h1>Liste des clients residentiel</h1>
+      {% for preresidentiel in listeClientx %}
+      <li>
+        Nom : {{preresidentiel.nom}}<br> 
+		Prenom : {{preresidentiel.prenom}}<br> 
+		Email : {{preresidentiel.email}}<br> 
+		Telephone : {{preresidentiel.phone}}<br>
+		----------------------------------<br>
+      </li>
+      {% endfor %}
+
+
+
 {% endblock%}
