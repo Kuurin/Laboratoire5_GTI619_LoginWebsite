@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5fcf9d74-3237-4bd2-9c8e-11584f607909" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/home.html" afterPath="$PROJECT_DIR$/accounts/templates/accounts/home.html" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/logout.html" afterPath="$PROJECT_DIR$/accounts/templates/accounts/logout.html" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/base.html" afterPath="$PROJECT_DIR$/accounts/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/administrateur/templates/administrateur/home.html" afterPath="$PROJECT_DIR$/administrateur/templates/administrateur/home.html" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/prepaffaire/templates/prepaffaire/home.html" afterPath="$PROJECT_DIR$/prepaffaire/templates/prepaffaire/home.html" />
-      <change beforePath="$PROJECT_DIR$/prepresidentiels/templates/prepresidentiels/home.html" afterPath="$PROJECT_DIR$/prepresidentiels/templates/prepresidentiels/home.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -190,6 +183,14 @@
       <option name="presentableId" value="Default" />
       <updated>1511978486033</updated>
     </task>
+    <task id="LOCAL-00001" summary="Vieux travaille a sec">
+      <created>1512533081235</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512533081235</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -226,6 +227,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Vieux travaille a sec" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vieux travaille a sec" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
